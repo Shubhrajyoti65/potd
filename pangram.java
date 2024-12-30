@@ -9,14 +9,14 @@ public class pangram {
             System.out.println("NO");
             return;
         }
-        boolean[] check = new boolean[26];
+        int[] check = new int[26];
         s = s.toLowerCase();
         int count = 0;
         for (char c : s.toCharArray()) {
             if ('a' <= c && c <= 'z') {
                 int index = c - 'a';
-                if (!check[index]) {
-                    check[index] = true;
+                if (check[index]==0) {
+                    check[index] = 1;
                     count++;
                 }
             }
