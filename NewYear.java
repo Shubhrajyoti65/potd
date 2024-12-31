@@ -12,6 +12,7 @@ public class  NewYear {
                 count++;
             }else{
                 break;
+            }
         }
 
 System.out.println(count);
