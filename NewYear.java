@@ -10,9 +10,6 @@ public class  NewYear {
             restTime += i*5;
             if(restTime<=rest){
                 count++;
-            }else{
-                break;
-            
             }
         }
 
